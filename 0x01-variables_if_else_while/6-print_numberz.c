@@ -13,9 +13,9 @@ int main(void)
 	do {
 		if (decimal / 2 == 5)
 			break;
-		putchar('0' + decimal);
+		putchar(decimal + '0');
 		decimal++;
 	} while (decimal);
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
