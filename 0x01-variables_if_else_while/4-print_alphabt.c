@@ -17,8 +17,10 @@ int main(void)
 		else if (alph == 113)
 			alph++;
 		else
+		{
 			putchar(alph);
-		alph++;
+			alph++;
+		}
 	}
 	printf("\n");
 	return (0);
