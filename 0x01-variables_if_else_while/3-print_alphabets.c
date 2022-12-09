@@ -3,8 +3,8 @@
 
 /**
  * main-entry point
- *Print both lower and upper case alphabets
- * return: Always 0 (Success)
+ * Print both lower and upper case alphabets
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
