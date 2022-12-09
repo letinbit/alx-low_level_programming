@@ -18,6 +18,6 @@ int main(void)
 			putchar(',');
 		decimal++;
 	} while (decimal);
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
