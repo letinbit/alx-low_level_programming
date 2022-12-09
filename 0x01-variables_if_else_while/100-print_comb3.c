@@ -11,12 +11,17 @@ int main(void)
 	int outer;
 	int inner;
 
-	for (outer = 0; outer <= 9; outer++)
+	for (outer = 0; outer < 9; outer++)
 	{
 		for (inner = outer + 1; inner <= 9; inner++)
 		{
 			putchar(outer + '0');
 			putchar(inner + '0');
+			if (outer == 8)
+			{
+				if (inner == 9)
+					break;
+			}
 			putchar(',');
 			putchar(' ');
 		}
