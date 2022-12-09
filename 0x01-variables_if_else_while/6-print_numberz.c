@@ -13,7 +13,7 @@ int main(void)
 	do {
 		if (decimal / 2 == 5)
 			break;
-		printf("%d", decimal);
+		putchar(decimal+'0');
 		decimal++;
 	} while (decimal);
 	printf("\n");
