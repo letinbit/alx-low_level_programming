@@ -11,18 +11,15 @@
 int main(void)
 {
 	int n;
+	int sign, new;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int sign;
-
 	if (n < 0)
 		sign = n * -1;
 	else
 		sign = n;
-
-	int new;
 
 	new = sign / 10;
 	new *= 10;
