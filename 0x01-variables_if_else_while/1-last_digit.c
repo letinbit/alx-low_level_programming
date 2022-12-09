@@ -1,29 +1,24 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+/* more header goes here */
 
 /**
  * main-entry point
- * betty style doc for function main goes there
- * Return: Always 0 (Success)
+ * betty style doc for funtion main goes there
+ * Return: lways 0 (Success)
  */
 int main(void)
 {
 	int n;
-	int sign, new;
+	int new;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n < 0)
-		sign = n * -1;
-	else
-		sign = n;
-
-	new = sign / 10;
+	new = n / 10;
 	new *= 10;
-	new = sign - new;
+	new = n - new;
 
 	printf("Last digit of %d is %d ", n, new);
 	if (new > 5)
