@@ -15,7 +15,10 @@ int main(void)
 			break;
 		putchar(decimal + '0');
 		if (decimal != 9)
+		{
 			putchar(',');
+			putchar(' ');
+		}
 		decimal++;
 	} while (decimal);
 	putchar('\n');
