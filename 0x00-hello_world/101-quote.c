@@ -1,6 +1,6 @@
 /*Author: Neway Solomon */
 #include <stdio.h>
-
+#include <unistd.h>
 /**
  * main-Entry point
  * This code will print a combination of letters
@@ -9,15 +9,7 @@
  */
 int main(void)
 {
-	int i, j;
-	char phrase_1[32] = "and that piece of art is useful";
-	char phrase_2[27] = " - Dora Korpar, 2015-10-19\n";
-
-	for (i = 0; i < 32; i++)
-		putchar(phrase_1[i]);
-	putchar('"');
-	for (j = 0; j < 28; j++)
-		putchar(phrase_2[j]);
-	/*putchar('\n');*/
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
+
