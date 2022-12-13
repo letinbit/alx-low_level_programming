@@ -2,12 +2,13 @@
 #include "main.h"
 
 /**
- * print_alphabete function to print alphabete
+ * print_alphabet - function to print alphabet
  * Here I use a function called print_alphabet() which is defined to
- * print alphabet.
- * Return: Always 0 (Success)
+ * print alphabet using a function _putchar()
+ *
+ * Return: Do not have return value
  */
-void print_alphabet(void)
+void print_alphabet(void)/*not take any arument and do not return*/
 {
 	char i = 'a';
 
