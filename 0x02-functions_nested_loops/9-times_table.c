@@ -26,8 +26,17 @@ void times_table(void)
 				_putchar(result + '0');
 			if (column != 9)
 			{
-				_putchar(',');
-				_putchar(' ');
+				if (result < 10)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
