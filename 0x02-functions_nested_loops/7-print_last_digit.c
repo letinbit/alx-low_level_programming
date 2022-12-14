@@ -4,13 +4,13 @@
 
 /**
  * print_last_digit - is a function that return the last gigit of given number
- * @last: it is a parameter will be passed to return its last digit
+ * @num: it is a parameter will be passed to return its last digit
  *
  * Return: lat digit of the passed parameter
  */
-int print_last_digit(int last)
+int print_last_digit(int num)
 {
-	last = abs(last) % 10;
+	int last = abs(num) % 10;
 
 	_putchar(last + '0');
 	return (last);
