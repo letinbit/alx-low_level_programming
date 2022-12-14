@@ -16,6 +16,6 @@ int main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 			sum = sum + i;
 	}
-	printf("Summation:multiples of 3 or 5:less than 1024 is %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
