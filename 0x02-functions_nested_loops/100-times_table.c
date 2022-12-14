@@ -8,6 +8,7 @@
  */
 void print_times_table(int n)
 {/* function open*/
+	void print(int, int, int, int);
 	int row, column, result;
 
 	if (n <= 15)
