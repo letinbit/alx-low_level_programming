@@ -15,7 +15,7 @@ int main(void)
 
 	for (count = 3; count < 53; count++)
 	{
-		if (count == 50)
+		if (count == 52)
 			printf("%ld\n", third);
 		else
 			printf("%ld, ", third);
