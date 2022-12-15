@@ -15,5 +15,6 @@ int add(int one, int two);
 void print_to_98(int n);
 void print_times_table(int n);
 void print_c_s(int x, int y, int r, int n);
+int _isupper(int c);
 
 #endif /* MAIN_H */
