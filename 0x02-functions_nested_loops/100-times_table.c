@@ -1,8 +1,8 @@
 /* Author is Neway Solomon */
 #include "main.h"
  /**
+  * print_c_s - is a function used to print both ',' and ' ' 
   * print_times_table - is a function that print time table
-  * print_c_s - is a function used to print both "," and " "
   * @n: is an argument that deternime the size of time table
   * Recturn: this function do not return any value
   * print_c_s - is a function used to print both "," and " "
@@ -12,6 +12,7 @@
   * @n: size of the time table
   * Recturn: this function do not return any value
   */
+/* function top print , and space*/
 void print_c_s(int x, int y, int r, int n)/* function top print , and space*/
 {
 	if (y != n)/* if (column != n)*/
@@ -36,6 +37,7 @@ void print_c_s(int x, int y, int r, int n)/* function top print , and space*/
 		}
 	}
 }
+/* function that call print_c_s */
 void print_times_table(int n)/* function that call print_c_s */
 {/* function open*/
 	/*calling print_c_s()*/
