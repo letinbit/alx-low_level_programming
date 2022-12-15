@@ -13,7 +13,7 @@ int main(void)
 	long int second = 1;
 	long int third = first + second;
 
-	for (count = 3; count < 51; count++)
+	for (count = 3; count < 53; count++)
 	{
 		if (count == 50)
 			printf("%ld\n", third);
