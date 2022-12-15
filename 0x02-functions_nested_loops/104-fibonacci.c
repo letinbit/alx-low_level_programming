@@ -10,18 +10,21 @@
 int main(void)
 {
 	double trunc(double);
-	
+
 	int count;
+	unsigned long int Toint;
 	double first = 0;
 	double second = 1;
 	double third = first + second;
-	
+
 	for (count = 3; count < 101; count++)
 	{
+		Toint = (unsigned long) third;
+
 		if (count == 100)
-			printf("%g\n", third);
+			printf("%ld\n", Toint);
 		else
-			printf("%g, ", third);
+			printf("%ld, ", Toint);
 		first = second;
 		second = third;
 		third = first + second;
