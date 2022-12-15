@@ -1,6 +1,7 @@
 /* Author is Neway Solomon */
 #include <stdio.h>
-
+#include <math.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * This program prints the first 50 Fibonacci numbers, starting with 1 and 2
@@ -8,17 +9,19 @@
  */
 int main(void)
 {
+	double trunc(double);
+	
 	int count;
-	long int first = 0;
-	long int second = 1;
-	long int third = first + second;
-
+	double first = 0;
+	double second = 1;
+	double third = first + second;
+	
 	for (count = 3; count < 101; count++)
 	{
 		if (count == 100)
-			printf("%ld\n", third);
+			printf("%g\n", third);
 		else
-			printf("%ld, ", third);
+			printf("%g, ", third);
 		first = second;
 		second = third;
 		third = first + second;
