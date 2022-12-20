@@ -26,7 +26,7 @@ void print_array(int *a, int n)
 				break;
 			}
 			printf("%d", a[i]);
-			if (i != size-1)
+			if (i != size - 1)
 			{
 				printf(", ");
 			}
@@ -38,8 +38,8 @@ void print_array(int *a, int n)
 		{
 			if (a[i] == '\0')
 				break;
-			printf("%d",a[i]);
-			if (i != n-1)
+			printf("%d", a[i]);
+			if (i != n - 1)
 				printf(", ");
 		}
 	}
