@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_rev - writes the character c to stdout
  * @s: The character to print
@@ -7,12 +8,13 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	int i = 0;
 
 	while (s[i] != '\0')
 	{
 		i++;
 	}
+
 	i--;
 	while (i >= 0)
 	{
