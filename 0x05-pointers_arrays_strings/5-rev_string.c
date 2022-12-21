@@ -21,10 +21,11 @@ void rev_string(char *s)
 	size = size - 2;
 	for (i = 0; i <= size; i++)
 	{
-		s_rev[i] = s[size-i];
-		if (s[i] == '\0')break;
+		s_rev[i] = s[size - i];
+		if (s[i] == '\0')
+			break;
 	}
-	for (i = 0; i <= size +1; i++)
+	for (i = 0; i <= size + 1; i++)
 	{
 		s[i] = s_rev[i];
 		if (s[i] == '\0')
