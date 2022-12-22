@@ -20,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 		size_dest++;
 	}
 	/*compare the value of n and the size of src*/
-	while (dest[size_dest] != '\0')
+	while (dest[size_src] != '\0')
 	{
 		size_src++;
 	}
