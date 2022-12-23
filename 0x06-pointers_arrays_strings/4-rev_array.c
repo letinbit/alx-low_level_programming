@@ -1,4 +1,5 @@
 /* author is Neway Solomon */
+#include "main.h"
 
 /**
  *  reverse_array- function that is used to reveres string s
@@ -10,13 +11,16 @@ void reverse_array(int *a, int n)
 {
 	int tmp;
 	int count = 0;
+	int last;
 
-	while (count < n)
+	last = n - 1;
+
+	while (count < last)
 	{
 		tmp = a[count];
-		a[count] = a[n];
-		a[n] = tmp;
+		a[count] = a[last];
+		a[last] = tmp;
 		count++;
-		n--;
+		last--;
 	}
 }
