@@ -1,5 +1,6 @@
 /*Author is Neway Solomon */
-#include <stdio.h>
+/*#include <stdio.h>*/
+
 /**
  * countstring - function to know the size of string
  * @s: string need to be counted
@@ -13,7 +14,7 @@ int countstring(char *s)
 	{
 		count++;
 	}
-	printf("The size of the string is %d\n", count);
+	/*printf("The size of the string is %d\n", count);*/
 	return (count);
 }
 
