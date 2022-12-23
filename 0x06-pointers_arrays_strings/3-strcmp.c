@@ -1,5 +1,20 @@
 /*Author is Neway Solomon */
-#include <stdio.h>
+
+/**
+ * countstring - function to know the size of string
+ * @s: string need to be counted
+ * Return: size of s
+ */
+int countstring(char *s)
+{
+	int count = 0;
+
+	while (s[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+}
 
 /**
  * _strcmp - Function that compare two strings
@@ -9,28 +24,31 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int s1_ascii = 0;
-	int s2_ascii = 0;
+	int countstring(char *s);
 	int count = 0;
+	int count1 = 0;
+	int count2 = 0;
+	int difference;
 
-	while (s1[count] != '\0') /*calculating s1 ascii value*/
+	count1 = countstring(s1);
+	count2 = countstring(s2);
+	if (count1 != count2)
 	{
-		s1_ascii = s1_ascii + s1[count];
-		count++;
-		/*("the current value of s1_ascii is %d\n", s1_ascii);*/
+		difference = (s1[0] - s2[0]);
 	}
-	/*printf("The ascii value of the first string s1 is %d\n", s1_ascii);*/
-	count = 0;
-	while (s2[count] != '\0')/* calculating s2 ascii value*/
-	{
-		s2_ascii = s2_ascii + s2[count];
-		count++;
-		/*printf("the current value of s1_ascii is %d\n", s2_ascii);*/
-	}
-	/*printf("The ascii value of the second string s2 is %d\n", s2_ascii);*/
-	/*printf("Thier difference is %d", (s1_ascii - s2_ascii));*/
-	if (s1_ascii == s2_ascii)
-		return (0);
 	else
-		return (s1[0] - s2[0]);
+	{
+		count = 0;
+		while (count < count1)
+		{
+			if (s1[count] != s2[count])
+			{
+				difference = (s1[0] - s2[0]);
+				break;
+			}
+			difference = 0;
+			count++;
+		}
+	}
+	return (difference);
 }
