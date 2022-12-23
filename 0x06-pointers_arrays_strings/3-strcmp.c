@@ -1,5 +1,5 @@
 /*Author is Neway Solomon */
-
+#include <stdio.h>
 /**
  * countstring - function to know the size of string
  * @s: string need to be counted
@@ -13,6 +13,7 @@ int countstring(char *s)
 	{
 		count++;
 	}
+	printf("The size of the string is %d\n", count);
 	return (count);
 }
 
@@ -32,6 +33,7 @@ int _strcmp(char *s1, char *s2)
 
 	count1 = countstring(s1);
 	count2 = countstring(s2);
+	difference = 0;
 	if (count1 != count2)
 	{
 		difference = (s1[0] - s2[0]);
