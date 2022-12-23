@@ -26,32 +26,18 @@ int countstring(char *s)
  */
 int _strcmp(char *s1, char *s2)
 {
-	int countstring(char *s);
 	int count = 0;
-	int count1 = 0;
-	int count2 = 0;
-	int difference;
+	int difference = 0;
 
-	count1 = countstring(s1);
-	count2 = countstring(s2);
-	difference = 0;
-	if (count1 != count2)
+	while (!(s1[count] == '\0') && !(s2[count] == '\0'))
 	{
-		difference = (s1[0] - s2[0]);
-	}
-	else
-	{
-		count = 0;
-		while (count < count1)
+		if (s1[count] != s2[count])
 		{
-			if (s1[count] != s2[count])
-			{
-				difference = (s1[0] - s2[0]);
-				break;
-			}
-			difference = 0;
-			count++;
+			difference = s1[count] - s2[count];
+			return (difference);
+			break;
 		}
+		count++;
 	}
-	return (difference);
+	return (0);
 }
