@@ -11,9 +11,9 @@ char *rot13(char *item)
 	int y;
 	char s1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopxrstuvwxyzabcdefghijklm";
-
-/*	for (x = 0; item[x] != '\0'; x++)*/
-	while (item[x] != '\0')
+	
+	for (x = 0; item[x] != '\0'; x++)
+	/*while (item[x] != '\0')*/
 	{
 		for (y = 0; y < 52; y++)
 		{
@@ -23,7 +23,7 @@ char *rot13(char *item)
 				break;
 			}
 		}
-	x++;
+	/*x++;*/
 	}
 	return (item);
 }
