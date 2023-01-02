@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_diagsum - function that print two diagonals of two dimentional array
+ * print_diagsums - function that print two diagonals of two dimentional array
  * @a: pointer
  * @size: size of an arry
  * Return: Nothing
