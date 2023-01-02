@@ -8,7 +8,7 @@
  * @size: size of an arry
  * Return: Nothing
  */
-void print_diagsum(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i;
 	int tmpsize;
