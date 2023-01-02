@@ -1,28 +1,38 @@
+/*Author is Neway Solomon*/
+/*#include <stdio.h>*/
+#include "main.h"
+
 /**
- * _strpbrk - functionthat return a pointer of the second  string 
- * accept from the first string s 
+ * _strpbrk - functionthat return a pointer of the second  string
+ * accept from the first string s
  * @s: first string
  * @accept: the sond string that will be searched
- * Retunr: pointer of the matched string
+ * Return: Pointer of the matched string (s +i)
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i;
-	unsigned int j;
+	unsigned int j = 0;
+	unsigned int i = 0;
+	int controller = 0;
 
-	for (i = 0; *(s + i); i++)
+	while (*(s + i))
 	{
-		for (j = 0; *(accept + j); j++)
+		while (*(accept + j))
 		{
-			if (*(s + i) == *(accept + j))
+			if (*(accept + j) == '\0')
+				break;
+			else if (*(accept + j) == *(s + i))
 			{
+				controller = 1;
 				break;
 			}
+			else
+				j++;
 		}
-		if (*(accept + j) !='\0')
-		{
+		if (controller != 0)
 			return (s + i);
-		}
+		i++;
+		j = 0;
 	}
 	return (0);
 }
