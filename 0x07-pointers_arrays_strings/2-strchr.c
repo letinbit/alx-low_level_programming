@@ -1,5 +1,5 @@
 /* Author is Neway Solomon */
-#include "main.h"
+
 /*#include <stdio.h>*/
 
 /**
@@ -12,16 +12,16 @@ char *_strchr(char *s, char c)
 {
 	unsigned int i;
 
-	for (i = 0; i < sizeof(s); i++)
+	for (i = 0; s[i] >= '\0'; i++)
 	{
 		/*printf("The s[%i] value is %c\n", i, s[i]);*/
-		if ((*s) == c)
+		if (s[i] == c)
 		{
 			/*printf("Now we get %c at s[%d]\n", c, s[i]);*/
 			/*printf("Thus %p is the return value\n", s);*/
-			return (s);
+			return (s + i);
 		}
-		s++;
+		/*s++;*/
 	}
 	return ('\0');
 }
