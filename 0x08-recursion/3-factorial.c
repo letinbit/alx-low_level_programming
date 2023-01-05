@@ -7,8 +7,8 @@
  */
 int factorial(int n)
 {
-	int result = 1;
-	int i = 1;
+	/*int result = 1;*/
+	/*int i = 1;*/
 
 	if (n < 0)
 		return (-1);
@@ -16,10 +16,15 @@ int factorial(int n)
 		return (1);
 	else if (n > 1)
 	{
-		for (i = 1; i <= n; i++)
-		{
-			result = result * i;
-		}
+		/**
+		 * for (i = 1; i <= n; i++)
+		 * {
+		 * result = result * i;
+		 * }
+		 */
+		return (n * factorial(n - 1));
+
+
 	}
-	return (result);
+	return (n);
 }
