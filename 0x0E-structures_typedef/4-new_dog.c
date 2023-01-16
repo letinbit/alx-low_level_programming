@@ -3,9 +3,6 @@
 #include <stdlib.h>
 #include "dog.h"
 
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
-
 /**
   * length - calculate the string length
   * @string: String to be measured
@@ -53,6 +50,8 @@ char *copy(char *snd, char *frt)
  * @name: parameter which will be coppied
  * @age: ...
  * @owner: the third parameter that will be coppied to the new struct type
+ *
+ * Return: new struc that is a copy of struct dog memebers name and owner
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
