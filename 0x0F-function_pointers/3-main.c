@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include "function_pointers.h"
+#include <string.h>
+#include <stdlib.h>
 
 /**
   * main - main.

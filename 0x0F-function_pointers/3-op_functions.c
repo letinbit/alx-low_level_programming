@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include "function_pointers.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * op_add - function that add 2 operands.
@@ -47,7 +48,7 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-	if (b <= 0 || b > a)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
@@ -64,7 +65,7 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-	if (b <= 0 || b > a)
+	if (b <= 0)
 	{
 		printf("Error\n");
 		exit(100);
