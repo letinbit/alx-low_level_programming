@@ -1,10 +1,12 @@
 #include "function_pointers.h"
 
 /**
- * print_name - function that prints the name 
+ * print_name - function that prints the name
  * - function that has function pointer as arument
  * @name: character type pointer to name
  * @f: a pointer to function
+ *
+ * Return: Nothing
  */
 void print_name(char *name, void (*f)(char *))
 {
