@@ -1,5 +1,6 @@
 /*Author for this code is Neway*/
 #include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * sum_them_all - Variadic functions that sum all its arguments
